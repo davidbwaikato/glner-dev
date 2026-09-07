@@ -84,6 +84,12 @@ npm --version
 The prompt will normally show the Python virtual environment name
 `python3-for-glner` after activation.
 
+`SETUP.bash` is safe to source repeatedly in the same shell. If the expected
+`python3-for-glner` virtual environment is already active, it is left in place rather
+than being activated again. If a different virtual environment is active, the GLNER
+environment is activated in its place. The Node.js runtime directory is likewise added
+to `PATH` only once.
+
 ### Download without installing
 
 If you want to cache the binary archives first:
