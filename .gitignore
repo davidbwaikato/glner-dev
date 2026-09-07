@@ -1,0 +1,14 @@
+# Downloaded binary archives and checksum manifests.
+prog-langs/downloads/*
+!prog-langs/downloads/.gitkeep
+
+# Expanded portable language distributions.
+prog-langs/installed/*
+!prog-langs/installed/.gitkeep
+
+# Project-local Python virtual environment.
+prog-langs/python3-for-glner/
+
+# Temporary extraction/download state.
+prog-langs/.tmp-*/
+prog-langs/downloads/*.part
