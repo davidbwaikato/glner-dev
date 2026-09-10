@@ -13,12 +13,13 @@ Workbench does not currently need a separately provisioned CLI toolchain.
 
 ## Pinned versions
 
-- CPython **3.11.16**, from Astral's `python-build-standalone` release
+- CPython **3.12.14**, from Astral's `python-build-standalone` release
   **20260901** (`install_only_stripped`).
 - Node.js **22.23.2**.
 
-Python 3.11 matches the workbench's current `requires-python >=3.11` and Ruff
-`py311` target.
+Python 3.12 satisfies the workbench's current `requires-python >=3.11` setting
+and provides the runtime required by the planned Lingua-based language
+identification stage.
 
 Node 22 is intentional. Vite 7 requires Node 20.19+ or 22.12+, so 22.23.2 is
 comfortably new enough. It also has an `x64-glibc-217` build from the Node.js
